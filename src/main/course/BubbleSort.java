@@ -1,5 +1,5 @@
 package main.course;
-
+/** Bubble sort is O(n^2) and is a stable sort - preserve the relative order of duplicated items */
 public class BubbleSort {
 
     public static int[] sort(int[] intArray){
