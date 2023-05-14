@@ -24,4 +24,20 @@ public class SelectionSort {
         intArrays[largestIndex] = temp;
     }
 
+    public static int[] selectionSortDescendingOrder(int[] intArray){
+        for (int firstIndexOfUnsortedArray = 0; firstIndexOfUnsortedArray < intArray.length; firstIndexOfUnsortedArray++) {
+            int largestIndex = firstIndexOfUnsortedArray;
+            for (int i = firstIndexOfUnsortedArray+1; i < intArray.length ; i++) {
+                if(intArray[i] > intArray[largestIndex]){
+                    largestIndex = i;
+                }
+            }
+            int temp = intArray[firstIndexOfUnsortedArray];
+            intArray[firstIndexOfUnsortedArray] = intArray[largestIndex];
+            intArray[largestIndex] = temp;
+        }
+
+        return intArray;
+    }
+
 }

@@ -20,4 +20,17 @@ class SelectionSortTest {
         assertEquals(-22, sortedArray[0]);
         System.out.println(Arrays.toString(sortedArray));
     }
+
+    @Test
+    void selectionSortDescendingOrder(){
+        //given
+        int[] numbers = {20, 35, -15, 7, 55, 1, -22};
+
+        //when
+        int[] sortedArray = SelectionSort.selectionSortDescendingOrder(numbers);
+
+        //then
+        assertEquals(55, sortedArray[0]);
+        System.out.println(Arrays.toString(sortedArray));
+    }
 }
